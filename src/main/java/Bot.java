@@ -35,7 +35,7 @@ public class Bot extends TelegramLongPollingBot {
 
         if (message != null && message.hasText()) {
             switch (message.getText()) {
-                case "/test":
+                case "/start":
                     textMsg = "Hej " + update.getMessage().getChat().getFirstName()  + ") \uD83D\uDE09\n\n" +
                             "USD  " + "\uD83C\uDDFA\uD83C\uDDF2" + "  " + usd.getBuy() + "  " + usd.getSale() + "\n" +
                             "EUR  " + "\uD83C\uDDEA\uD83C\uDDFA"+ "  " + eur.getBuy() + "  " + eur.getSale() + "\n" +
@@ -187,7 +187,7 @@ public class Bot extends TelegramLongPollingBot {
         keyboardRow4.add(new KeyboardButton("UAH \uD83C\uDDFA\uD83C\uDDE6 -> PLN \uD83C\uDDF5\uD83C\uDDF1"));
         keyboardRow4.add(new KeyboardButton("PLN \uD83C\uDDF5\uD83C\uDDF1 -> UAH \uD83C\uDDFA\uD83C\uDDE6"));
 
-        keyboardRow5.add(new KeyboardButton("\uD83D\uDCB0 Курс валют \uD83D\uDCB0"));
+        keyboardRow5.add(new KeyboardButton("\uD83D\uDCB0 Kursy walut \uD83D\uDCB0"));
 
         keyboardRowList.add(keyboardRow1);
         keyboardRowList.add(keyboardRow2);
